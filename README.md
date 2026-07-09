@@ -54,7 +54,7 @@ Design decisions:
 
 ![Demo screenshot](docs/demo_screenshot.png)
 
-![Sample detections](docs/sample_detections.png)
+![Detection report](docs/demo_screenshot_detection.png)
 
 ## Repository Structure
 
@@ -69,7 +69,7 @@ Design decisions:
 | [training/training_config.yaml](training/training_config.yaml) | Final training/export configuration |
 | [docs/architecture.png](docs/architecture.png) | Pipeline diagram |
 | [docs/demo_screenshot.png](docs/demo_screenshot.png) | Portfolio preview image |
-| [docs/sample_detections.png](docs/sample_detections.png) | Annotated inference example |
+| [docs/demo_screenshot_detection.png](docs/demo_screenshot_detection.png) | Annotated inference example |
 | [.github/workflows/ci.yml](.github/workflows/ci.yml) | Lightweight CI validation |
 
 ## Run Locally
