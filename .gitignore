@@ -1,0 +1,49 @@
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+.env.*
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Repo exports and archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# Large training and benchmark outputs
+artifacts/
+artifacts_v2/
+runs/
+Personal-Protective-Equipment---Combined-Model-8/
+PPEdatasets/
+code_submission/
+_bench*.py
+_bench*.json
+_bench*.txt
+_eval.py
+_train_v2.py
+
+# Model artifacts not intended for the public mirror
+*.pt
+*.onnx
+!models/best_int8.onnx
+
+# Local scratch files
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,56 @@
+project: ppe_compliance_detection
+version: v2
+
+dataset:
+  name: Personal Protective Equipment - Combined Model
+  source_url: https://universe.roboflow.com/roboflow-universe-projects/personal-protective-equipment-combined-model
+  license: CC BY 4.0
+  total_images: 44002
+  split:
+    train: 30765
+    valid: 8814
+    test: 4423
+  format: YOLOv8
+
+model:
+  base_model: yolov8n.pt
+  input_size: 640
+  classes:
+    - Fall-Detected
+    - Gloves
+    - Goggles
+    - Hardhat
+    - Ladder
+    - Mask
+    - NO-Gloves
+    - NO-Goggles
+    - NO-Hardhat
+    - NO-Mask
+    - NO-Safety Vest
+    - Person
+    - Safety Cone
+    - Safety Vest
+
+training:
+  epochs: 50
+  batch_size: 32
+  patience: 15
+  optimizer: SGD
+  learning_rate_schedule: cosine
+  device: cuda:0
+  seed: 0
+  deterministic: true
+  close_mosaic: 10
+
+export:
+  fp32_onnx: best.onnx
+  int8_onnx: best_int8.onnx
+  deployment_model: best_int8.onnx
+  target_runtime: onnxruntime cpu
+
+metrics:
+  map50_test: 0.776
+  map50_95_test: 0.491
+  precision: 0.704
+  recall: 0.812
+  validation_map50_peak: 0.762
