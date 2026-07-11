@@ -85,6 +85,8 @@ python app.py
 
 Open http://localhost:7860 after the server starts.
 
+> Python 3.10+ required (tested with 3.10 on Hugging Face Spaces and 3.13 locally).
+
 ## Training Notes
 
 See [training/training_notes.md](training/training_notes.md) for the dataset source, split sizes, model settings, and evaluation summary.
