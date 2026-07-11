@@ -72,7 +72,8 @@ Design decisions:
 | [docs/architecture.png](docs/architecture.png) | Pipeline diagram |
 | [docs/demo_screenshot.png](docs/demo_screenshot.png) | Portfolio preview image |
 | [docs/demo_screenshot_detection.png](docs/demo_screenshot_detection.png) | Annotated inference example |
-| [.github/workflows/ci.yml](.github/workflows/ci.yml) | Lightweight CI validation |
+| [.github/workflows/ci.yml](.github/workflows/ci.yml) | Lightweight CI validation (`ruff --fix`, ONNX load check) |
+| [.gitattributes](.gitattributes) | Cross-OS line-ending consistency |
 
 ## Run Locally
 

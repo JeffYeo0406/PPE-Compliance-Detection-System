@@ -133,13 +133,13 @@ Every scripted answer below is provably true to the code and scoped to the `DEPL
 
 Current active study focus is **DEA-C01** — do not propose High Effort items that would meaningfully compete with this for weekly hours.
 
-### 1. High Reward / Low Effort (Quick Wins)
+### 1. High Reward / Low Effort (Quick Wins) ✅ Completed
 
-| Proposed Change | Target | ROI Justification |
+| Proposed Change | Target | Status |
 | :--- | :--- | :--- |
-| Add `--fix` to the linter step in CI | [.github/workflows/ci.yml](.github/workflows/ci.yml) | `ruff check --fix` would auto-correct trivial formatting issues during CI runs rather than failing the pipeline. Time cost: one line edit. |
-| Pin Python version in HF Space README metadata | `README.md` (HF Space card) | The HF Space already uses `python_version: "3.10"` in its YAML frontmatter; documenting this explicitly alongside a `requirements.txt` note would prevent future build-pin surprises. Five-minute change. |
-| Add a `.gitattributes` file for consistent line endings | `.gitattributes` root file | Prevents cross-OS line-ending diffs that pollute PRs, especially important if anyone clones on macOS/Linux. One-line config. |
+| Add `--fix` to the linter step in CI | [.github/workflows/ci.yml](.github/workflows/ci.yml) | ✅ Applied — `ruff check --fix` runs on every push to `main` (commit `8e739f3`). |
+| Pin Python version note in README | [README.md](README.md) | ✅ Applied — callout added under Run Locally section. |
+| Add a `.gitattributes` file for consistent line endings | [.gitattributes](.gitattributes) | ✅ Applied — `* text=auto` with binary markers for `.onnx` and image files (commit `8e739f3`). |
 
 ### 2. High Reward / High Effort (Strategic Scaling — explicitly "someday")
 
